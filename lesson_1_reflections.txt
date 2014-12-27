@@ -1,0 +1,11 @@
+GIT COMMANDS
+
+git diff <commit1> <commit2>
+git log --stat: shows a summary of changed files at every commit
+git init: initializes a git repository but doesn't do a commit by itself
+
+
+--------------------------------------------------
+GENERAL
+linux: .bashrc    mac: .bash_profile
+
