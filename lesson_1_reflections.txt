@@ -3,7 +3,28 @@ GIT COMMANDS
 git diff <commit1> <commit2>
 git log --stat: shows a summary of changed files at every commit
 git init: initializes a git repository but doesn't do a commit by itself
+git log --graph --oneline <branch1> <branch2>
+git show <commit>: shows the difference between a commit and its parent
+git remote -v: see all the current remotes, verbose shows urls
+git remote add origin <remote repository address>: origin is the standard name for one remote
+git push <remote repository> <local repository>, e.g. git remote origin master
 
+
+Branching:
+1. create a branch using: git branch <branch name>
+    git branch by itself shows all branches
+2. checkout the branch
+3. commit changes
+4. merge branches, e.g. git merge master coins
+5. delete branch: git branch -d coins
+
+Working Directory     Staging Area      Repository
+file1                 file1             commit1
+file2                 file2             commit2
+
+git diff:                 Working Directory vs Staging Area
+git diff --staged         Staging Area      vs commit1
+git diff commit1 commit2  commit1           vs commit2
 
 --------------------------------------------------
 GENERAL
