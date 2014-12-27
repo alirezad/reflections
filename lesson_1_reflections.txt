@@ -5,6 +5,15 @@ git log --stat: shows a summary of changed files at every commit
 git init: initializes a git repository but doesn't do a commit by itself
 
 
+
+Working Directory     Staging Area      Repository
+file1                 file1             commit1
+file2                 file2             commit2
+
+git diff:                 Working Directory vs Staging Area
+git diff --staged         Staging Area      vs commit1
+git diff commit1 commit2  commit1           vs commit2
+
 --------------------------------------------------
 GENERAL
 linux: .bashrc    mac: .bash_profile
